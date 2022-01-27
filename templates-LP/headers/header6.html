@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HEADER 6</title>
+    <link
+      rel="stylesheet"
+      href="http://static-media.prawf.showroomprive.net/v4/common/css/style_v4.css?ver=0-0-21"
+    />
+    <link rel="stylesheet" href="../css/headers.css" />
+  </head>
+
+  <body>
+    <div class="lp-body">
+      <!-- HEADER 6 -->
+      <div id="lp-header6">
+        <img
+          src="https://dummyimage.com/200x60/000/fff&text=logo"
+          alt=""
+          class="lp-header-logo lp-el-mob"
+        />
+        <div class="lp-header">
+          <div class="lp-header-in">
+            <div class="lp-flex-desk">
+              <img
+                src="https://dummyimage.com/200x70/000/fff&text=logo"
+                alt=""
+                class="lp-header-logo lp-el-desk"
+              />
+              <p class="lp-header-title">
+                <strong>Lorem ipsum dolor sit,<br />amet consectetur</strong>
+              </p>
+              <p class="lp-header-exclu">Exclusivité Showroomprivé</p>
+              <div class="lp-header-cadre">
+                <!-- timer -->
+                <div class="lp-header-timer">
+                  <div class="lp-header-timer-flex">
+                    <span class="lp-days" id="lp-days"></span>
+                    <div class="lp-timer-txt">Jours</div>
+                  </div>
+                  <div class="lp-header-timer-flex">
+                    <span class="lp-hours" id="lp-hours"></span>
+                    <div class="lp-timer-txt">Heures</div>
+                  </div>
+                  <div class="lp-header-timer-flex">
+                    <span class="lp-minutes" id="lp-minutes"></span>
+                    <div class="lp-timer-txt">Minutes</div>
+                  </div>
+                  <div class="lp-header-timer-flex">
+                    <span class="lp-seconds" id="lp-seconds"></span>
+                    <div class="lp-timer-txt">Secondes</div>
+                  </div>
+                </div>
+                <p class="lp-header-timer-fin">Avant la fin de l'offre</p>
+                <p class="lp-header-timer-ac">avec le code</p>
+                <!-- eo: timer -->
+              </div>
+              <p class="lp-header-code">XXXCODEXXX</p>
+            </div>
+          </div>
+          <a href="#" class="lp-cta lp-header-cta">J'en profite</a>
+        </div>
+      </div>
+      <!-- eo: HEADER 6 -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      // TIMER
+      var deadline = new Date("Jul 30, 2021 23:59:59").getTime();
+
+      var time_x = setInterval(function () {
+        var now = new Date().getTime();
+        var time = deadline - now;
+        var days = Math.floor(time / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+
+        var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+
+        var seconds = Math.floor((time % (1000 * 60)) / 1000);
+
+        // ajoute un 0 devant un nombre inférieur à deux chiffres
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        document.getElementById("lp-days").innerHTML = days + " : ";
+        document.getElementById("lp-hours").innerHTML = hours + " : ";
+        document.getElementById("lp-minutes").innerHTML = minutes + " : ";
+        document.getElementById("lp-seconds").innerHTML = seconds;
+
+        // reset le timer à 0 : 0 : 0 : 0 quand la deadline est arrivé
+        if (time < 0) {
+          clearInterval(time_x);
+          document.getElementById("lp-days").innerHTML = "0";
+          document.getElementById("lp-hours").innerHTML = "0";
+          document.getElementById("lp-minutes").innerHTML = "0";
+          document.getElementById("lp-seconds").innerHTML = "0";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>SLIDER 3</title>
+
+    <link
+      rel="stylesheet"
+      href="http://static-media.prawf.showroomprive.net/v4/common/css/style_v4.css?ver=0-0-21"
+    />
+    <link rel="stylesheet" type="text/css" href=".././css/slick.css" />
+    <link rel="stylesheet" href=".././css/sliders.css" />
+  </head>
+
+  <body>
+    <div class="lp-body">
+      <!-- SLIDER 3 -->
+      <div id="lp-slider3">
+        <div class="lp-slider-out">
+          <div class="lp-slider">
+            <!-- Slide 1 -->
+            <div class="lp-slider-item" title="Slide 1">
+              <div class="lp-slider-flexbox">
+                <div class="lp-slider-flex lp-slider-img">
+                  <img src="../images/prodsq1.jpg" alt="" />
+                </div>
+                <div class="lp-slider-flex lp-slider-txt">
+                  <div class="lp-slider-txt-in">
+                    <p class="lp-slider-para">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ut quam sint ad fugiat quibusdam ipsum.
+                    </p>
+                    <a href="#" class="lp-cta">Je fonce</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="lp-slider-item" title="Slide 2">
+              <div class="lp-slider-flexbox">
+                <div class="lp-slider-flex lp-slider-img">
+                  <img src="../images/prodsq2.jpg" alt="" />
+                </div>
+                <div class="lp-slider-flex lp-slider-txt">
+                  <div class="lp-slider-txt-in">
+                    <p class="lp-slider-para">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ut quam sint ad fugiat quibusdam ipsum.
+                    </p>
+                    <a href="#" class="lp-cta">Je fonce</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="lp-slider-item" title="Slide 3">
+              <div class="lp-slider-flexbox">
+                <div class="lp-slider-flex lp-slider-img">
+                  <img src="../images/prodsq3.jpg" alt="" />
+                </div>
+                <div class="lp-slider-flex lp-slider-txt">
+                  <div class="lp-slider-txt-in">
+                    <p class="lp-slider-para">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ut quam sint ad fugiat quibusdam ipsum.
+                    </p>
+                    <a href="#" class="lp-cta">Je fonce</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="lp-slider-item" title="Slide 4">
+              <div class="lp-slider-flexbox">
+                <div class="lp-slider-flex lp-slider-img">
+                  <img src="../images/prodsq4.jpg" alt="" />
+                </div>
+                <div class="lp-slider-flex lp-slider-txt">
+                  <div class="lp-slider-txt-in">
+                    <p class="lp-slider-para">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ut quam sint ad fugiat quibusdam ipsum.
+                    </p>
+                    <a href="#" class="lp-cta">Je fonce</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- eo: SLIDER 3 -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Slider
+        $(".lp-slider").slick({
+          dots: true,
+          customPaging: function (slider, i) {
+            return '<button class="tab">' + $(slider.$slides[i]).attr("title");
+          },
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          prevArrow:
+            "<img src='arrow-l.png' alt='' class='slider-arrow-left'/>",
+          nextArrow:
+            "<img src='arrow-r.png' alt='' class='slider-arrow-right'/>",
+        });
+      });
+    </script>
+  </body>
+</html>

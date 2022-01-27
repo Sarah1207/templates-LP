@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>SLIDER 4</title>
+
+    <link
+      rel="stylesheet"
+      href="http://static-media.prawf.showroomprive.net/v4/common/css/style_v4.css?ver=0-0-21"
+    />
+    <link rel="stylesheet" type="text/css" href=".././css/slick.css" />
+    <link rel="stylesheet" href=".././css/sliders.css" />
+  </head>
+
+  <body>
+    <div class="lp-body">
+      <!-- SLIDER 4 -->
+      <div id="lp-slider4">
+        <div class="lp-slider">
+          <div class="lp-slider-item">
+            <img
+              src="../images/prodsq1.jpg"
+              alt=""
+              class="lp-slider-item-img"
+            />
+            <div class="lp-slider-item-txt">
+              <p class="lp-slider-item-title">SLIDE TITLE</p>
+              <p class="lp-slider-item-para">
+                Lorem ipsum dolor, sit amet consectetur. Adipisicing elit ex
+                officiis.
+              </p>
+              <a href="#" class="lp-cta">Je fonce</a>
+            </div>
+          </div>
+          <div class="lp-slider-item">
+            <img
+              src="../images/prodsq2.jpg"
+              alt=""
+              class="lp-slider-item-img"
+            />
+            <div class="lp-slider-item-txt">
+              <p class="lp-slider-item-title">SLIDE TITLE</p>
+              <p class="lp-slider-item-para">
+                Lorem ipsum dolor, sit amet consectetur. Adipisicing elit ex
+                officiis.
+              </p>
+              <a href="#" class="lp-cta">Je fonce</a>
+            </div>
+          </div>
+          <div class="lp-slider-item">
+            <img
+              src="../images/prodsq3.jpg"
+              alt=""
+              class="lp-slider-item-img"
+            />
+            <div class="lp-slider-item-txt">
+              <p class="lp-slider-item-title">SLIDE TITLE</p>
+              <p class="lp-slider-item-para">
+                Lorem ipsum dolor, sit amet consectetur. Adipisicing elit ex
+                officiis.
+              </p>
+              <a href="#" class="lp-cta">Je fonce</a>
+            </div>
+          </div>
+          <div class="lp-slider-item">
+            <img
+              src="../images/prodsq4.jpg"
+              alt=""
+              class="lp-slider-item-img"
+            />
+            <div class="lp-slider-item-txt">
+              <p class="lp-slider-item-title">SLIDE TITLE</p>
+              <p class="lp-slider-item-para">
+                Lorem ipsum dolor, sit amet consectetur. Adipisicing elit ex
+                officiis.
+              </p>
+              <a href="#" class="lp-cta">Je fonce</a>
+            </div>
+          </div>
+          <div class="lp-slider-item">
+            <img
+              src="../images/prodsq6.jpg"
+              alt=""
+              class="lp-slider-item-img"
+            />
+            <div class="lp-slider-item-txt">
+              <p class="lp-slider-item-title">SLIDE TITLE</p>
+              <p class="lp-slider-item-para">
+                Lorem ipsum dolor, sit amet consectetur. Adipisicing elit ex
+                officiis.
+              </p>
+              <a href="#" class="lp-cta">Je fonce</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- eo: SLIDER 4 -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        // Slider
+        $(".lp-slider").slick({
+          centerMode: true,
+          dots: true,
+          arrows: true,
+          prevArrow:
+            "<img src='arrow-l.png' alt='' class='slider-arrow-left'/>",
+          nextArrow:
+            "<img src='arrow-r.png' alt='' class='slider-arrow-right'/>",
+          responsive: [
+            {
+              breakpoint: 9999,
+              settings: {
+                centerPadding: "0",
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                centerPadding: "70px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

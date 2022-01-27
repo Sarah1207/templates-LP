@@ -1,0 +1,455 @@
+/******************************* COMMON STYLE ***************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lp-body {
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  /* overflow: hidden; */
+  width: 100%;
+  line-height: 0;
+}
+
+.lp-body img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+img[onclick^="redirectPartner"],
+div[onclick^="redirectPartner"] {
+  cursor: pointer;
+}
+
+.lp-body p,
+.lp-body span {
+  line-height: 130%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lp-cta {
+  display: block;
+  text-decoration: none;
+  max-width: 235px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 2.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.lp-el-desk {
+  display: none;
+}
+
+/******************
+** MEDIA QUERIES **
+******************/
+@media screen and (min-width: 768px) {
+  .lp-el-desk {
+    display: block;
+  }
+
+  .lp-el-mob {
+    display: none;
+  }
+
+  .lp-body p {
+    width: 100%;
+  }
+
+  .lp-cta:hover {
+    background-color: #000;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/******************************* eo: COMMON STYLE ***********************/
+
+/******************************* PRODUITS 1 *****************************/
+#lp-produit1 {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#lp-produit1 .lp-produit-flexbox:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+#lp-produit1 .lp-produit-flex-img {
+  max-width: 420px;
+  margin: auto;
+}
+
+#lp-produit1 .lp-produit-title {
+  font-size: 25px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#lp-produit1 .lp-produit-flex-para {
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+/******************
+** MEDIA QUERIES **
+******************/
+@media screen and (min-width: 768px) {
+  #lp-produit1 .lp-produit-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #lp-produit1 .lp-produit-flexbox:nth-child(1) {
+    flex-direction: row-reverse;
+  }
+
+  #lp-produit1 .lp-produit-flex {
+    flex-basis: 45%;
+  }
+
+  #lp-produit1 .lp-produit-flex-img {
+    max-width: 100%;
+  }
+
+  #lp-produit1 .lp-produit-title {
+    text-align: left;
+    font-size: 35px;
+    padding-bottom: 0;
+  }
+
+  #lp-produit1 .lp-produit-flex-para {
+    text-align: left;
+    font-size: 18px;
+    padding: 30px 0;
+  }
+
+  #lp-produit1 .lp-cta {
+    margin-left: 0;
+  }
+
+  #lp-produit1 .lp-produit-flex-img {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+}
+
+@media screen and (min-width: 1520px) {
+}
+
+/*************************** eo: PRODUITS 1 *****************************/
+
+/******************************* PRODUITS 2 *****************************/
+#lp-produit2 {
+  background-color: #ccc;
+  padding: 20px 0;
+}
+
+#lp-produit2 .lp-produit {
+  width: 90%;
+  max-width: 500px;
+  padding-bottom: 0;
+  margin: auto;
+}
+
+#lp-produit2 .lp-produit-flex-comment {
+  display: none;
+}
+#lp-produit2 .lp-produit-flex-comment-mob {
+  display: block;
+  padding: 10px 15px;
+  background-color: white;
+  border-top: 1px solid black;
+  margin-bottom: 20px;
+}
+
+#lp-produit2 .lp-produit-flex-txt {
+  padding: 5% 7%;
+  background-color: #fff;
+}
+
+#lp-produit2 .lp-produit-flex-txt p {
+  text-align: left;
+  width: 100%;
+}
+
+#lp-produit2 .lp-produit-flex-title {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+#lp-produit2 .lp-produit-flex-para {
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+#lp-produit2 .lp-produit-comment-title {
+  font-size: 15px;
+  font-weight: bolder;
+}
+#lp-produit2 .lp-produit-comment-slider {
+  margin-top: 10px;
+  width: 100%;
+}
+#lp-produit2 .lp-produit-comment-slide {
+  width: 100%;
+}
+#lp-produit2 .lp-produit-comment-name {
+  margin-top: 5px;
+  font-weight: bolder;
+  font-size: 13px;
+}
+#lp-produit2 .lp-produit-comment-text {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+#lp-produit2 .lp-cta {
+  margin-left: 0;
+}
+
+/******************
+** MEDIA QUERIES **
+******************/
+@media screen and (min-width: 768px) {
+  #lp-produit2 .lp-produit {
+    max-width: 1000px;
+  }
+
+  #lp-produit2 .lp-produit-flexbox {
+    padding: 30px 0;
+    display: flex;
+    align-items: inherit;
+    justify-content: space-between;
+  }
+
+  #lp-produit2 .lp-produit-flexbox:nth-child(1) {
+    margin-bottom: 0;
+    flex-direction: row-reverse;
+  }
+
+  #lp-produit2 .lp-produit-flex {
+    flex-basis: 50%;
+  }
+
+  #lp-produit2 .lp-produit-flex-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7%;
+  }
+
+  #lp-produit2 .lp-produit-flex-title {
+    font-size: 35px;
+  }
+
+  #lp-produit2 .lp-produit-flex-para {
+    font-size: 18px;
+    padding: 10px 0 25px;
+  }
+
+  #lp-produit2 .lp-produit-flex-img {
+    margin: 0;
+    position: relative;
+  }
+
+  #lp-produit2 .lp-produit-flex-comment-mob {
+    display: none !important;
+  }
+  #lp-produit2 .lp-produit-flex-comment {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 15px;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 1);
+    bottom: -20px;
+    left: -15px;
+  }
+  #lp-produit2 .lp-produit-flex-comment-reverse {
+    left: auto;
+    right: -15px;
+  }
+  #lp-produit2 .lp-produit-comment-title {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  #lp-produit2 .lp-produit-comment-slider {
+    margin-top: 10px;
+    width: 100%;
+  }
+  #lp-produit2 .lp-produit-comment-slide {
+    width: 100%;
+  }
+  #lp-produit2 .lp-produit-comment-name {
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  #lp-produit2 .lp-produit-comment-text {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+}
+
+@media screen and (min-width: 1520px) {
+}
+
+/*************************** eo: PRODUITS 2 *****************************/
+
+/******************************* PRODUITS 3 *****************************/
+#lp-produit3 {
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+}
+
+#lp-produit3 .lp-produit-flex-img img {
+  max-width: 500px;
+}
+
+#lp-produit3 .lp-produit-flex1 {
+  padding-bottom: 30px;
+}
+
+#lp-produit3 .lp-produit-flex-para {
+  padding: 20px;
+}
+
+/******************
+** MEDIA QUERIES **
+******************/
+@media screen and (min-width: 768px) {
+  #lp-produit3 .lp-produit-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #lp-produit3 .lp-produit-flex {
+    flex-basis: 47%;
+  }
+
+  #lp-produit3 .lp-produit-flex1 {
+    padding-bottom: 0;
+  }
+
+  #lp-produit3 .lp-produit-flex-txt {
+    width: 80%;
+    margin: -40px auto 0;
+    background-color: #ccc;
+    z-index: 1;
+    position: relative;
+  }
+
+  #lp-produit3 .lp-produit-flex-para {
+    padding: 20px 30px 0 30px;
+    font-size: 15px;
+  }
+
+  #lp-produit3 .lp-cta {
+    transform: translateY(18px);
+  }
+}
+
+@media screen and (min-width: 1220px) {
+}
+
+@media screen and (min-width: 1520px) {
+}
+
+/*************************** eo: PRODUITS 3 *****************************/
+
+/******************************* PRODUITS 4 *****************************/
+.lp-produit {
+}
+
+.lp-produit-flex-img img {
+  max-width: 500px;
+}
+
+.lp-produit-flex-txt {
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+  z-index: 1;
+  position: relative;
+}
+
+.lp-produit-title {
+  font-size: 23px;
+}
+
+.lp-produit-para {
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+/******************
+** MEDIA QUERIES **
+******************/
+@media screen and (min-width: 768px) {
+  .lp-produit {
+    padding-bottom: 0;
+    margin: 40px auto;
+  }
+
+  .lp-produit-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .lp-produit-flex {
+    flex-basis: 48%;
+  }
+
+  .lp-produit-flex-img {
+    margin: auto;
+  }
+
+  .lp-produit-flex-img img {
+    max-width: 500px;
+  }
+
+  .lp-produit-flex-txt {
+    margin: 0 auto;
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+}
+
+@media screen and (min-width: 1520px) {
+  .lp-produit-title {
+    font-size: 26px;
+  }
+
+  .lp-produit-para {
+    padding: 20px 0;
+    font-size: 17px;
+  }
+}
+
+/*************************** eo: PRODUITS 4 *****************************/

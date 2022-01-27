@@ -1,0 +1,206 @@
+/******************************* COMMON STYLE ***************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lp-body {
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  /* overflow: hidden; */
+  width: 100%;
+  line-height: 0;
+}
+
+.lp-body img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+img[onclick^="redirectPartner"],
+div[onclick^="redirectPartner"] {
+  cursor: pointer;
+}
+
+.lp-body p,
+.lp-body span {
+  line-height: 130%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lp-cta {
+  display: block;
+  text-decoration: none;
+  max-width: 235px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 2.8;
+  transition: all .3s ease-in-out;
+}
+
+.lp-el-desk {
+  display: none;
+}
+
+/******************
+** MEDIA QUERIES **
+******************/
+@media screen and (min-width: 768px) {
+  .lp-el-desk {
+    display: block;
+  }
+
+  .lp-el-mob {
+    display: none;
+  }
+
+  .lp-body p {
+    width: 100%;
+  }
+
+  .lp-cta:hover {
+    background-color: #000;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+/******************************* eo: COMMON STYLE ***********************/
+
+/******************************* MARQUE 1 *****************************/
+#lp-marque1 {
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+}
+
+.lp-marque-flexbox {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lp-marque-item {
+  position: relative;
+}
+
+.lp-marque-item::after {
+  content: "";
+  background: url("./../marques/pointer.png") no-repeat;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-size: 27px 21px;
+  width: 27px;
+  height: 21px;
+}
+
+.lp-marque-item1 {
+  flex-basis: 100%;
+}
+
+.lp-marque-item2,
+.lp-marque-item3 {
+  flex-basis: 49%;
+  margin: 2% 0;
+}
+
+.lp-marque-item4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lp-marque-item4 div {
+  flex-basis: 49%;
+}
+
+/* hover */
+.lp-marque-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: all .3s ease-in-out;
+}
+
+.lp-marque-hover p:nth-child(1) {
+  font-family: "locator-bold";
+  padding-bottom: 12px;
+}
+
+.lp-marque-hover p {
+  color: #fff;
+  font-size: 13px;
+}
+
+.lp-marque-hover:hover {
+  opacity: 1;
+}
+
+/* eo: hover */
+
+/******************
+** MEDIA QUERIES **
+******************/
+@media screen and (min-width: 768px) {
+  #lp-marque1 {
+    max-width: 1100px;
+  }
+
+  .lp-marque-flexbox {
+    align-items: center;
+  }
+
+  .lp-marque-item {
+    flex-basis: 18.7%;
+  }
+
+  .lp-marque-item4 {
+    flex-basis: 39%;
+  }
+
+  .lp-marque-item4 div {
+    flex-basis: 48%;
+  }
+
+  .lp-marque-item2,
+  .lp-marque-item3 {
+    margin: 0;
+  }
+
+  .lp-marque-hover p {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:1220px) {}
+
+@media screen and (min-width:1520px) {}
+
+/*************************** eo: MARQUE 1 *****************************/
+
+
+
+/******************************* MARQUE 2 *****************************/
+
+/******************
+** MEDIA QUERIES **
+******************/
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width:1220px) {}
+
+@media screen and (min-width:1520px) {}
+
+/*************************** eo: MARQUE 2 *****************************/
